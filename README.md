@@ -38,4 +38,4 @@
 
 [新手工程師的程式教室](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-authentication-and-authorization.html)
 
-
+[深入淺出 Spring Boot 多重設定檔管理 (Spring Profiles)](https://blog.miniasp.com/post/2022/09/21/Mastering-Spring-Boot-Profiles)

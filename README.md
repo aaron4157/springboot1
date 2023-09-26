@@ -5,10 +5,10 @@
 專案內容包括：
 
 - 符合MVC架構的簡單網站
-- 劃分三種安全區域:公用區(/)、一般使用者區(/user)、管理員區(/admin)、登入使用者公用區(/welcome)
+- 劃分三種安全區域:公用區(/)、一般使用者區(/user)、管理員區(/admin)、登入使用者共用區(/welcome)
 - 兩種角色權限:USER, ADMIN
 - 自訂登入頁面
-- Postgre 資料庫介接設定(依自己需求改寫)
+- Postgre SQL 資料庫介接設定(依自己需求改寫)
 - 帳號資料表DDL(PostgreSQL)
 
 便於快速開發網站雛形，適用於敏捷式(agile)開發流程。
@@ -16,7 +16,7 @@
 ## 相容性
 - JDK 版本：1.8
 - Spring boot 版本: 2.7.15
-- Spring security 版本: 2.7.15
+- Spring security 版本: 5.7.10
 - 模板引擎: Thymeleaf 3.0.15
 - Spring JDBC 版本: 2.1.6
 
@@ -40,3 +40,5 @@
 [新手工程師的程式教室](https://chikuwa-tech-study.blogspot.com/2021/06/spring-boot-security-authentication-and-authorization.html)
 
 [深入淺出 Spring Boot 多重設定檔管理 (Spring Profiles)](https://blog.miniasp.com/post/2022/09/21/Mastering-Spring-Boot-Profiles)
+
+[Spring Security without WebSecurityConfigurerAdapter (Deprecated)](https://www.javaguides.net/2022/08/spring-security-without-webSecurityconfigureradapter.html)

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="~{blank}">
+   <head>
+      <!-- 專用header放置在此 -->
+      <title>Contact</title>      
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <section id="content" layout:fragment="main-content">
+      <!--  contact -->
+      <div class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 no_ld">
+                  <div class="titlepage text_align_right">
+                     <h2>Contact Us</h2>
+                  </div>
+               </div>
+               <div class="col-md-5 ">
+                  <div class="contact_img">
+                     <figure><img th:src="@{images/coimg.png}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class=" col-md-6 offset-md-1">
+                  <form id="request" class="main_form" th:action="@{/}" method="post">
+                     <div class="row">
+                        <div class="col-md-12 no_mo">
+                           <div class="titlepage text_align_right">
+                              <h2>Contact Us</h2>
+                           </div>
+                        </div>
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Your Name" type="type" name="Your Name"> 
+                        </div>
+                        <div class="col-md-6">
+                           <input class="contactus" placeholder="Phone number" type="type" name="Phone number">                          
+                        </div>
+                        <div class="col-md-6">
+                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      </section>
+   </body>
+</html>

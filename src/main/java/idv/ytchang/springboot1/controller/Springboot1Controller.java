@@ -3,7 +3,6 @@ package idv.ytchang.springboot1.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/")
@@ -14,15 +13,49 @@ public class Springboot1Controller {
 	}
 	
 	@RequestMapping("")
-	@ResponseBody
 	public String index(Model model) {
-		return "HOMEPAGE!";
+		
+		model.addAttribute("sidepanel_active", "index");
+		return "index";
 	}
 	
-	@RequestMapping("welcome")
-	@ResponseBody
+	@RequestMapping("about")
 	public String welcome(Model model) {
-		return "Welcome!";
+		
+		model.addAttribute("body_class", "inner_page");
+		model.addAttribute("sidepanel_active", "about");
+		return "about";
+	}
+	
+	@RequestMapping("birds")
+	public String birds(Model model) {
+		
+		model.addAttribute("body_class", "inner_page");
+		model.addAttribute("sidepanel_active", "birds");
+		return "birds";
+	}
+	
+	@RequestMapping("testimonial")
+	public String testimonial(Model model) {
+		
+		model.addAttribute("body_class", "inner_page");
+		model.addAttribute("sidepanel_active", "testimonial");
+		return "testimonial";
 	}
 
+	@RequestMapping("contact")
+	public String contact(Model model) {
+		
+		model.addAttribute("body_class", "inner_page");
+		model.addAttribute("sidepanel_active", "contact");
+		return "contact";
+	}
+	
+	@RequestMapping("blank")
+	public String text(Model model) {
+		
+		model.addAttribute("body_class", "inner_page");
+		model.addAttribute("sidepanel_active", "blank");
+		return "blank";
+	}
 }

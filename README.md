@@ -7,7 +7,7 @@
 - 符合MVC架構的簡單網站
 - 劃分三種安全區域:公用區(/)、一般使用者區(/user)、管理員區(/admin)、登入使用者共用區(/welcome)
 - 兩種角色權限:USER, ADMIN
-- 自訂登入頁面
+- 自訂登入頁面、登出頁面
 - Postgre SQL 資料庫介接設定(依自己需求改寫)
 - 帳號資料表DDL(PostgreSQL)
 
@@ -19,6 +19,7 @@
 - Spring security 版本: 5.7.10
 - 模板引擎: Thymeleaf 3.0.15
 - Spring JDBC 版本: 2.1.6
+- thymeleaf-layout-dialect: 2.4.1 (nz.net.ultraq.thymeleaf)
 
 
 ## 使用方式
@@ -32,6 +33,7 @@
 - 基於角色的權限控管
 - 自訂登入頁面
 - 資料庫設計
+- 公用版面 layout
 
 ## References
 
@@ -42,3 +44,7 @@
 [深入淺出 Spring Boot 多重設定檔管理 (Spring Profiles)](https://blog.miniasp.com/post/2022/09/21/Mastering-Spring-Boot-Profiles)
 
 [Spring Security without WebSecurityConfigurerAdapter (Deprecated)](https://www.javaguides.net/2022/08/spring-security-without-webSecurityconfigureradapter.html)
+
+[範例網站 Birdor來自 theme wagon ](https://themewagon.com/themes/birdor/)
+
+[Spring Security and Thymeleaf] (https://www.thymeleaf.org/doc/articles/springsecurity.html)
